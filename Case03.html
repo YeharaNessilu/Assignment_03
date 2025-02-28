@@ -10,7 +10,7 @@
     body {
       margin: 0;
       padding: 0;
-      height: 300vh; /* To create scrollable effect */
+      height: 300vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,17 +18,16 @@
       background-color: white;
     }
 
-    /* Fixed outer border (gray and red) */
     .fixed-border {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 300px; /* Increased size */
+      width: 300px;
       height: 300px;
       border-radius: 50%;
       background-color: transparent;
-      border: 20px solid gray; /* Thicker border */
+      border: 20px solid gray;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,46 +40,45 @@
       height: 100%;
       border-radius: 50%;
       background-color: transparent;
-      border: 15px solid red; /* Thicker red border */
+      border: 15px solid red;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-sizing: border-box; /* Ensures no extra spacing */
+      box-sizing: border-box;
     }
 
-    /* Circles */
     .circle {
       position: absolute;
-      width: 199px; /* Increased size */
+      width: 199px;
       height: 199px;
       border-radius: 50%;
       color: white;
-      font-size: 22px; /* Bigger text */
+      font-size: 22px;
       font-weight: bold;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px; /* Ensure text fits inside */
+      padding: 20px;
     }
 
-    /* Different colored circles appearing at different scroll points */
+
     .circle1 {
       background-color: purple;
-      top: 34vh; /* Appears first */
+      top: 34vh;
     }
 
     .circle2 {
       background-color: blue;
-      top: 120vh; /* Appears next when scrolled */
+      top: 120vh;
     }
 
     .circle3 {
       background-color: palevioletred;
-      top: 235vh; /* Appears last */
+      top: 235vh;
     }
 
-    /* Content section to create scrolling effect */
+
     .spacer {
       height: 100vh;
     }
@@ -89,19 +87,16 @@
 </head>
 <body>
 
-<!-- Fixed Border (Gray & Red) -->
 <div class="fixed-border">
   <div class="inner-border">
-    <!-- Circle content will appear inside this border while scrolling -->
+
   </div>
 </div>
 
-<!-- Circles appearing inside the fixed border as we scroll -->
 <div class="circle circle1">Hello</div>
 <div class="circle circle2">Welcome To</div>
 <div class="circle circle3">Institute of Software Engineering</div>
 
-<!-- Spacer to create scrolling effect -->
 <div class="spacer"></div>
 
 </body>
